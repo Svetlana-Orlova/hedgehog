@@ -1,0 +1,138 @@
+.page-title {
+  padding-top: 70px;
+  background-image: url("../img/background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 130px;
+  margin-top: -55px;
+  box-sizing: border-box;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/hedgehog-mobile.png");
+    background-repeat: no-repeat;
+    width: 195px;
+    height: 195px;
+    bottom: -85px;
+    right: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 180px;
+    padding-bottom: 10px;
+    margin-top: -115px;
+    background-image: url("../img/background-desktop.png");
+    background-size: 100% 150%;
+
+    &::after {
+      background-image: url("../img/hedgehog-right.png");
+      width: 220px;
+      height: 160px;
+      bottom: -45px;
+      right: 0;
+      background-size: 100%;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/hedgehog-left.png");
+      width: 220px;
+      height: 250px;
+      bottom: -70px;
+      left: 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 290px;
+    margin-top: -130px;
+    min-height: 950px;
+
+    &::after {
+      width: 458px;
+      height: 342px;
+      bottom: -70px;
+    }
+
+    &::before {
+      width: 443px;
+      height: 512px;
+      bottom: -60px;
+    }
+  }
+}
+
+.page-title__wrapper {
+  width: 276px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    text-align: center;
+  }
+}
+
+.page-title__title {
+  width: 202px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 443px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.page-title__note {
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: @green-grey;
+  font-weight: 400;
+  margin-top: 12px;
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 61px;
+  }
+}
+
+.page-title__description {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: @green-grey;
+  font-weight: 400;
+  width: 280px;
+  margin-top: 7px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 660px;
+    margin-top: 20px;
+  }
+}
+
+.page-title__button {
+  margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+  }
+}

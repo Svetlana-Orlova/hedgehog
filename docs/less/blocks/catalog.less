@@ -1,0 +1,342 @@
+.catalog {
+  margin: -50px auto 0;
+  padding-left: 20px;
+  width: 300px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    margin: 0 auto;
+    width: 600px;
+    margin-top: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1197px;
+    margin-top: -150px;
+  }
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    margin: 0 auto;
+    width: 570px;
+    margin-top: 37px;
+    min-height: 1345px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1225px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 850px;
+  }
+}
+
+.catalog__item {
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  position: relative;
+  height: 318px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  border-radius: 5%;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    height: 397px;
+    padding-left: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 572px;
+    height: 410px;
+  }
+}
+
+.catalog__item--Evgeniy {
+  background-image: url("../img/evgeniy-mobile.png");
+  background-position: center -36px;
+  background-size: 116% 125%;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/evgeniy-desktop.png");
+    background-position: 0 0;
+    background-size: 615px 430px;
+  }
+}
+
+.catalog__item--Maxim {
+  background-image: url("../img/maxim-mobile.png"), url("../img/background-maxim-mobile.png");
+  background-position: 83px 110px, -20px -36px;
+  background-size: 95%, 104% 125%;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/maxim.png");
+    background-position: 0 0;
+    background-size: 615px 430px;
+  }
+}
+
+.catalog__item--food {
+  background-image: url("../img/food-mobile.jpg");
+  background-position: -28px -38px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/food.jpg");
+    background-position: 0 0;
+    background-size: 570px 397px;
+  }
+}
+
+.catalog__item-sale {
+  width: min-content;
+  background-color: @green-grey;
+  color: @white;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  white-space: nowrap;
+  font-feature-settings: "pnum" on, "lnum" on;
+  text-align: center;
+  padding: 7px;
+  position: absolute;
+  top: -10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    top: -15px;
+  }
+}
+
+.catalog__item-info {
+  display: block;
+  width: 101px;
+  height: 17px;
+  position: relative;
+  top: 5px;
+  left: 135px;
+  color: @basic;
+  text-align: center;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  @media (min-width: @tablet-width) {
+    width: 37px;
+    height: 37px;
+    top: 15px;
+    left: 440px;
+  }
+}
+
+.catalog__item-label {
+  display: none;
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.catalog__item-infocontent {
+  margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+    color: @white;
+    font-size: 14px;
+    position: absolute;
+    width: 220px;
+    height: 79px;
+    top: 55px;
+    right: -84px;
+    z-index: 10;
+    background-color: @basic;
+    text-align: center;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 15px;
+      top: -8px;
+      right: 95px;
+      transform: rotate(45deg);
+      background-color: @basic;
+    }
+  }
+}
+
+.catalog__item-healthinfo,
+.catalog__item-courtinginfo {
+  display: inline-block;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+  }
+}
+
+.catalog__item-healthinfo::before,
+.catalog__item-courtinginfo::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: -2px;
+  left: -15px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 46px;
+    height: 46px;
+    top: -14px;
+    left: -40px;
+    background-size: auto;
+  }
+}
+
+.catalog__item-healthinfo {
+  margin-right: 30px;
+
+  &::before {
+    background-image: url("../img/icon-health.svg");
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/icon-healthinfo.svg");
+    }
+  }
+}
+
+.catalog__item-courtinginfo::before {
+  background-image: url("../img/icon-courting.svg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icon-courtinginfo.svg");
+  }
+}
+
+.catalog__item-input:checked ~ .catalog__item-infocontent {
+  display: block;
+}
+
+.catalog__item-subtitle {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1;
+  width: 174px;
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+    width: 204px;
+    margin-top: 15px;
+  }
+}
+
+.catalog__item--food .catalog__item-subtitle {
+  margin-top: 60px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 65px;
+  }
+}
+
+.catalog__item-description {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  color: @black;
+  width: 114px;
+  min-height: 114px;
+  margin: 5px 0 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+    width: 182px;
+    margin-top: 7px;
+  }
+}
+
+.catalog__item-price {
+  font-weight: bold;
+  display: block;
+}
+
+.catalog__item-price--uncurrent {
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: line-through;
+  color: @light-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 7px;
+  }
+}
+
+.catalog__item-price--current {
+  font-size: 40px;
+  color: @basic;
+}
+
+.catalog__item--food .catalog__item-price--current {
+  margin-top: 25px;
+}
+
+.catalog-button {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  top: -25px;
+  right: -208px;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: -475px;
+  }
+}
+
+.icon-plus {
+  width: 35px;
+  height: 35px;
+}

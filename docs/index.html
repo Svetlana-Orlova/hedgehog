@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ёжики</title>
+  <link rel="preload" href="css/styles.min.css" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <a href="#" class="page-header__logo logo">
+      <svg class="page-header__logo-img">
+        <use xlink:href="../img/sprite.svg#icon-logo-header"></use>
+      </svg>
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О нас
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Галерея
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--tel" href="tel:+79655698998">+7 (965) 569-89-98
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <a class="main-tel" href="tel:+79655698998">
+      <svg class="icon-tel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <use xlink:href="img/sprite.svg#icon-call"></use>
+      </svg>
+    </a>
+    <a class="main-basket" href="#">
+      <svg class="icon-basket" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <use xlink:href="img/sprite.svg#icon-basket"></use>
+      </svg>
+    </a>
+  </header>
+  <main class="page-main">
+    <section class="page-title">
+      <div class="page-title__wrapper">
+        <h1 class="page-title__title">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/title-desktop.svg">
+            <img  class="page-title__title-img" src="img/title-mobile.svg" alt="Ёжики" width="202" height="44">
+          </picture>
+        </h1>
+        <p class="page-title__note">Тоже любят молоко</p>
+        <p class="page-title__description">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</p>
+        <a class="page-title__button button" href="#form">Купить ёжика</a>
+      </div>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--breeding">
+          <h3 class="advantages__subtitle advantages__subtitle--breeding">Разведение ежиков</h3>
+          <p class="advantages__description">Собственная ферма, уход и содержание</p>
+        </li>
+        <li class="advantages__item advantages__item--health">
+          <h3 class="advantages__subtitle advantages__subtitle--health">Здоровье</h3>
+          <p class="advantages__description">Всегда прививаем и вовремя обследуем ваших будущих питомцев</p>
+        </li>
+        <li class="advantages__item advantages__item--courting">
+          <h3 class="advantages__subtitle advantages__subtitle--courting">Любовь и забота</h3>
+          <p class="advantages__description">Каждому ежику мы дарим много внимания</p>
+        </li>
+      </ul>
+    </section>
+    <section class="slider">
+      <h2 class="visually-hidden">Каталог</h2>
+      <div class="slider-arrow next">
+        <svg class="icon-arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+      <div class="slider-arrow prev">
+        <svg class="icon-arrow-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+        </svg>
+      </div>
+      <div class="slider-inner">
+        <div class="slider-slides">
+          <ul class="slider__list">
+            <li class="slider__item slider__item--Evgeniy">
+              <div class="slider__item-sale">-50 %</div>
+              <div class="slider__item-info">
+                <h4 class="visually-hidden">Информация</h4>
+                <input class="slider__item-input visually-hidden" id="info-evgeniy" type="checkbox" name="info-evgeniy">
+                <label class="slider__item-label" for="info-evgeniy">
+                  <svg class="icon-info" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="img/sprite.svg#icon-info"></use>
+                  </svg>
+                </label>
+                <div class="slider__item-infocontent">
+                  <span class="slider__item-healthinfo">привит</span>
+                  <span class="slider__item-courtinginfo">1235</span>
+                </div>
+              </div>
+              <h3 class="slider__item-subtitle">Ежик “Евгений”</h3>
+              <p class="slider__item-description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение</p>
+              <span class="slider__item-price slider__item-price--uncurrent">3 000 ₽</span>
+              <span class="slider__item-price slider__item-price--current">1 500 ₽</span>
+              <button class="slider-button" title="Добавить в корзину">
+                <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="slider__item slider__item--Maxim">
+              <div class="slider__item-sale">-50 %</div>
+              <div class="slider__item-info">
+                <h4 class="visually-hidden">Информация</h4>
+                <input class="slider__item-input visually-hidden" id="info-maxim" type="checkbox" name="info-maxim">
+                <label class="slider__item-label" for="info-maxim">
+                  <svg class="icon-info" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="img/sprite.svg#icon-info"></use>
+                  </svg>
+                </label>
+                <div class="slider__item-infocontent">
+                  <span class="slider__item-healthinfo">привит</span>
+                  <span class="slider__item-courtinginfo">1174</span>
+                </div>
+              </div>
+              <h3 class="slider__item-subtitle">Ежик “Максим”</h3>
+              <p class="slider__item-description">Немного игривый и задорный характер этого друга никого не оставит равнодушным!</p>
+              <span class="slider__item-price slider__item-price--uncurrent">5 000 ₽</span>
+              <span class="slider__item-price slider__item-price--current">2 500 ₽</span>
+              <button class="slider-button" title="Добавить в корзину">
+                <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="slider__item slider__item--food">
+              <h3 class="slider__item-subtitle">Корм для ёжиков</h3>
+              <p class="slider__item-description">Скомбинированое питание, которое содержит нужное количество витаминов и кальция</p>
+              <span class="slider__item-price slider__item-price--current">500 ₽</span>
+              <button class="slider-button" title="Добавить в корзину">
+                <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <form class="form" action="https://echo.htmlacademy.ru">
+      <a id="form" class="visually-hidden"></a>
+      <h2 class="form-title">Заполните заявку и мы забронируем для Вас нового друга</h2>
+      <div class="form-wrapper">
+        <fieldset class="form__fieldset form__fieldset-aim">
+          <ul class="form__list form__list-aim">
+            <li class="form__item form__item-aim">
+              <input class="form__input-radio form__aim-input visually-hidden" type="radio" id="form-myself" name="form-aim" value="myself" checked>
+              <label class="form__label-radio form__aim-label" for="form-myself">хочу ёжика для себя</label>
+            </li>
+            <li class="form__item form__item-aim">
+              <input class="form__input-radio form__aim-input visually-hidden" type="radio" id="form-kids" name="form-aim" value="kids">
+              <label class="form__label-radio form__aim-label" for="form-kids">хочу ёжика для детей</label>
+            </li>
+            <li class="form__item form__item-aim">
+              <input class="form__input-radio form__aim-input visually-hidden" type="radio" id="form-breeding" name="form-aim" value="breeding">
+              <label class="form__label-radio form__aim-label" for="form-breeding">хочу ёжика для разведения</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset-count">
+          <ul class="form__list form__list-count">
+            <li class="form__item form__item-count">
+              <input class="form__input-radio form__count-input visually-hidden" type="radio" id="form-few" name="form-count" value="few" checked>
+              <label class="form__label-radio form__count-label" for="form-few">Мне нужен 1-2 ёжика</label>
+            </li>
+            <li class="form__item form__item-count">
+              <input class="form__input-radio form__count-input visually-hidden" id="form-3-4" type="radio" name="form-count" value="3-4">
+              <label class="form__label-radio form__count-label" for="form-3-4">Мне нужны 3-4 ёжика</label>
+            </li>
+            <li class="form__item form__item-count">
+              <input class="form__input-radio form__count-input visually-hidden" type="radio" id="form-3-and-more" name="form-count" value="3-and-more">
+              <label class="form__label-radio form__count-label" for="form-3-and-more">Мне нужны 3 и более ёжиков</label>
+            </li>
+            <li class="form__item form__item-count">
+              <input class="form__input-radio form__count-input visually-hidden" type="radio" id="form-unknown" name="form-count" value="unknown">
+              <label class="form__label-radio form__count-label" for="form-unknown">Пока присматриваюсь</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <fieldset class="form__fieldset form__fieldset--contacts">
+        <ul class="form__list form__list--contacts">
+          <li class="form__item form__item--contacts form__item--name">
+            <label class="form__label-text label-text visually-hidden" for="form-name">Имя</label>
+            <input class="form__input-text input-text" id="form-name" name="form-name" type="text" placeholder="Ваше имя" required>
+          </li>
+          <li class="form__item form__item--contacts form__item--tel">
+            <label class="form__label-text label-text visually-hidden" for="form-tel">Телефон</label>
+            <input class="form__input-text input-text" id="form-tel" name="form-tel" type="tel" placeholder="Ваш телефон" required>
+          </li>
+          <li class="form__item form__item--contacts form__item--mail">
+            <label class="form__label-text visually-hidden" for="form-email">E-mail</label>
+            <input class="form__input-text input-text" id="form-email" name="form-email" type="email" placeholder="Ваш e-mail" >
+          </li>
+          <li class="form__item form__item--contacts form__item--comment">
+            <label class="form__label-text visually-hidden" for="form-comment">Комментарий</label>
+            <textarea class="form__input-text input-text textarea" id="form-comment" name="form-comment" placeholder="Комментарий к заявке" wrap="hard" rows="1" cols="1"></textarea>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="form__button button" type="submit">Купить ёжика</button>
+    </form>
+    <section class="promo">
+      <div class="promo-wrapper">
+        <object class="promo__logo" type="image/svg+xml" data="img/icon-promo.svg" width="41" height="41" >
+        </object>
+        <h2 class="promo-title">У на осталось еще: <span class="promo-remains">25 ёжиков</span></h2>
+      </div>
+      <p class="promo-description">Торопитесь! Акция <br>действует до 26. 02. 2023</p>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper page-footer__wrapper--desktop">
+      <div class="page-footer__wrapper page-footer__wrapper--nodesktop">
+        <a href="#" class="page-footer__logo logo">
+          <svg class="page-footer__logo-img" width="56" height="20">
+            <use xlink:href="../img/sprite.svg#icon-logo-footer"></use>
+          </svg>
+        </a>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="catalog.html">Каталог
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">О нас
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Контакты
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Галерея
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <section class="page-footer__social">
+          <h2 class="visually-hidden">Давайте дружить!</h2>
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--insta" href="#">
+                <svg width="40" height="40">
+                  <use xlink:href="../img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--fb" href="#">
+                <svg width="40" height="40">
+                  <use xlink:href="../img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
+                <img class="page-footer__social-img" src="img/icon-twitter.png" width="40" height="40" alt="Twitter">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <a class="page-footer__tel" href="tel:+79655698998">+7 (965) 569-89-98</a>
+    </div>
+    <div class="page-footer__copyright">
+      <p class="page-footer__copyright-description">Все права защищены. </p>
+      <p class="page-footer__copyright-description">Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

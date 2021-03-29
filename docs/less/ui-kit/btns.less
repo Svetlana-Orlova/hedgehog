@@ -1,0 +1,31 @@
+.button {
+  box-sizing: border-box;
+  padding: 22px;
+  color: @white;
+  text-align: center;
+  outline: none;
+  background-color: @green-grey;
+  display: block;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  box-shadow: 4px 4px 20px @light-grey, -8px -8px 20px @white;
+  border-radius: 40px;
+
+  &:focus,
+  &:hover {
+    background: linear-gradient(90.14deg, #b0d3ce -2.41%, #ffedce 99.79%);
+    color: @basic;
+  }
+
+  &:active {
+    color: fade(@basic, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 26px;
+    width: 328px;
+    margin: 0 auto;
+  }
+}

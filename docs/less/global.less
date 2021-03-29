@@ -1,0 +1,47 @@
+@tablet-width: 768px;
+@desktop-width: 1920px;
+@mobile-middle-width: 450px;
+
+body {
+  font-family: "Cormorant Infant", "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: @basic;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: @basic;
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

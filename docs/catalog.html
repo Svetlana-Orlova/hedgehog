@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ёжики</title>
+  <link rel="preload" href="css/styles.min.css" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo logo" href="index.html">
+      <svg class="page-header__logo-img">
+        <use xlink:href="../img/sprite.svg#icon-logo-header"></use>
+      </svg>
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <input class="main-nav__input visually-hidden" type="checkbox" name="catalog" id="catalog">
+            <label class="main-nav__label main-nav__link" for="catalog">Каталог</label>
+            <div class="main-nav__extracatalog">
+              <ul class="main-nav__extracatalog-list">
+                <li class="main-nav__extracatalog-item">
+                  <a class="main-nav__extracatalog-link" href="#">Ёжики</a>
+                </li>
+                <li class="main-nav__extracatalog-item">
+                  <a class="main-nav__extracatalog-link" href="#">Питание</a>
+                </li>
+                <li class="main-nav__extracatalog-item">
+                  <a class="main-nav__extracatalog-link" href="#">Переноски</a>
+                </li>
+                <li class="main-nav__extracatalog-item">
+                  <a class="main-nav__extracatalog-link" href="#">Лекарства</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">О нас
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Галерея
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <div class="main-nav__contacts">
+              <a class="main-nav__link main-nav__link--connection consulting" href="#">Позвоните мне</a>
+              <a class="main-nav__link main-nav__link--tel" href="tel:+79655698998">+7 (965) 569-89-98</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-contacts">
+      <a class="main-connection consulting" href="#">Позвоните мне</a>
+      <a class="main-tel main-tel--catalog" href="tel:+79655698998">
+        <svg class="icon-tel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use xlink:href="img/sprite.svg#icon-call"></use>
+        </svg>
+      </a>
+    </div>
+    <a class="main-basket" href="#">
+      <svg class="icon-basket" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <use xlink:href="img/sprite.svg#icon-basket"></use>
+      </svg>
+    </a>
+  </header>
+  <main class="page-main">
+    <section class="page-title">
+      <div class="page-title__wrapper">
+        <h1 class="page-title__title">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/title-desktop.svg">
+            <img  class="page-title__title-img" src="img/title-mobile.svg" alt="Ёжики" width="202" height="44">
+          </picture>
+        </h1>
+        <p class="page-title__note">Тоже любят молоко</p>
+        <p class="page-title__description">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</p>
+        <a class="page-title__button button" href="#">Купить ёжика</a>
+      </div>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--breeding">
+          <h3 class="advantages__subtitle advantages__subtitle--breeding">Разведение ежиков</h3>
+          <p class="advantages__description">Собственная ферма, уход и содержание</p>
+        </li>
+        <li class="advantages__item advantages__item--health">
+          <h3 class="advantages__subtitle advantages__subtitle--health">Здоровье</h3>
+          <p class="advantages__description">Всегда прививаем и вовремя обследуем ваших будущих питомцев</p>
+        </li>
+        <li class="advantages__item advantages__item--courting">
+          <h3 class="advantages__subtitle advantages__subtitle--courting">Любовь и забота</h3>
+          <p class="advantages__description">Каждому ежику мы дарим много внимания</p>
+        </li>
+      </ul>
+    </section>
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog__item--Evgeniy">
+            <div class="catalog__item-sale">-50 %</div>
+            <div class="catalog__item-info">
+              <h4 class="visually-hidden">Информация</h4>
+              <input class="catalog__item-input visually-hidden" id="info-evgeniy" type="checkbox" name="info-evgeniy">
+              <label class="catalog__item-label" for="info-evgeniy">
+                <svg class="icon-info" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="img/sprite.svg#icon-info"></use>
+                </svg>
+              </label>
+              <div class="catalog__item-infocontent">
+                <span class="catalog__item-healthinfo">привит</span>
+                <span class="catalog__item-courtinginfo">1235</span>
+              </div>
+            </div>
+            <h3 class="catalog__item-subtitle">Ежик “Евгений”</h3>
+            <p class="catalog__item-description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение</p>
+            <span class="catalog__item-price catalog__item-price--uncurrent">3 000 ₽</span>
+            <span class="catalog__item-price catalog__item-price--current">1 500 ₽</span>
+            <button class="catalog-button" title="Добавить в корзину">
+              <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="img/sprite.svg#icon-plus"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="catalog__item catalog__item--Maxim">
+            <div class="catalog__item-sale">-50 %</div>
+            <div class="catalog__item-info">
+              <h4 class="visually-hidden">Информация</h4>
+              <input class="catalog__item-input visually-hidden" id="info-maxim" type="checkbox" name="info-maxim">
+              <label class="catalog__item-label" for="info-maxim">
+                <svg class="icon-info" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="img/sprite.svg#icon-info"></use>
+                </svg>
+              </label>
+              <div class="catalog__item-infocontent">
+                <span class="catalog__item-healthinfo">привит</span>
+                <span class="catalog__item-courtinginfo">1174</span>
+              </div>
+            </div>
+            <h3 class="catalog__item-subtitle">Ежик “Максим”</h3>
+            <p class="catalog__item-description">Немного игривый и задорный характер этого друга никого не оставит равнодушным!</p>
+            <span class="catalog__item-price catalog__item-price--uncurrent">5 000 ₽</span>
+            <span class="catalog__item-price catalog__item-price--current">2 500 ₽</span>
+            <button class="catalog-button" title="Добавить в корзину">
+              <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="img/sprite.svg#icon-plus"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="catalog__item catalog__item--food">
+            <h3 class="catalog__item-subtitle">Корм для ёжиков</h3>
+            <p class="catalog__item-description">Скомбинированое питание, которое содержит нужное количество витаминов и кальция</p>
+            <span class="catalog__item-price catalog__item-price--current">500 ₽</span>
+            <button class="catalog-button" title="Добавить в корзину">
+              <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="img/sprite.svg#icon-plus"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+    </section>
+  </main>
+  <footer class="page-footer page-footer--catalog">
+    <div class="page-footer__wrapper page-footer__wrapper--desktop">
+      <div class="page-footer__wrapper page-footer__wrapper--nodesktop">
+        <a class="page-footer__logo logo" href="index.html">
+          <svg class="page-footer__logo-img" width="56" height="20">
+            <use xlink:href="../img/sprite.svg#icon-logo-footer"></use>
+          </svg>
+        </a>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Каталог
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">О нас
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Контакты
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Галерея
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <section class="page-footer__social">
+          <h2 class="visually-hidden">Давайте дружить!</h2>
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--insta" href="#">
+                <svg width="40" height="40">
+                  <use xlink:href="../img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--fb" href="#">
+                <svg width="40" height="40">
+                  <use xlink:href="../img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
+                <img class="page-footer__social-img" src="img/icon-twitter.png" width="40" height="40" alt="Twitter">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="page-footer__contacts">
+        <a class="page-footer__tel" href="tel:+79655698998">+7 (965) 569-89-98</a>
+        <a class="page-footer__connection consulting" href="#">Позвоните мне</a>
+      </div>
+    </div>
+    <div class="page-footer__copyright">
+      <p class="page-footer__copyright-description">Все права защищены. </p>
+      <p class="page-footer__copyright-description">Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+    </div>
+  </footer>
+
+  <section class="connection">
+    <div class="connection-description">
+      <h2 class="connection-subtitle">Получить бесплатную консультацию</h2>
+      <a href="#" class="connection__close-button close-button">
+        <img class="connection__close-img" src="img/icon-close.svg" width="37" height="37" alt="Закрыть окно">
+      </a>
+    </div>
+    <form class="connection-form" action="https://echo.htmlacademy.ru" method="post">
+      <select class="connection__city" name="city" id="city">
+        <option value="St.Petersburg" selected>Санкт-Петербург</option>
+        <option value="Moscow">Москва</option>
+        <option value="Volgograd">Волгоград</option>
+        <option value="Kaliningrad">Калининград</option>
+      </select>
+      <ul class="connection__appointment-list">
+        <li class="connection__appointment-item">
+          <label class="visually-hidden" for="appointment-name">Ваше имя</label>
+          <input class="connection__appointment-name connection-input" id="appointment-name" type="text" name="name" placeholder="Ваше имя" required>
+        </li>
+        <li class="connection__appointment-item">
+          <label class="visually-hidden" for="appointment-tel">Телефон</label>
+          <input class="connection__appointment-tel connection-input" id="appointment-tel" type="tel" name="tel" placeholder="Телефон" required>
+        </li>
+      </ul>
+      <fieldset class="connection__consulting-aims">
+        <input class="connection__consulting-input visually-hidden" type="checkbox" name="consulting-aim" value="purchase" id="purchase" checked>
+        <label class="connection__consulting-label" for="purchase">Хочу приобрести ёжика</label>
+        <input class="connection__consulting-input visually-hidden" type="checkbox" name="consulting-aim" value="care-details" id="care-details">
+        <label class="connection__consulting-label" for="care-details">Хочу узнать подробности об уходе</label>
+        <input class="connection__consulting-input visually-hidden" type="checkbox" name="consulting-aim" value="purchase-details" id="purchase-details">
+        <label class="connection__consulting-label" for="purchase-details">Хочу узнать подробности о покупке</label>
+      </fieldset>
+      <button class="connection-button button" type="submit">Отправить</button>
+      <small class="connection-details">Нажимая кнопку ОТПРАВИТЬ вы соглашаетесь с <a class="connection-conditions">условиями обработки данных</a></small>
+    </form>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="js/connection.js"></script>
+</body>
+
+</html>
