@@ -76,7 +76,6 @@ const copy = () => {
   return gulp
     .src(
       [
-        "docs/fonts/**/*.{woff,woff2}",
         "docs/img/**",
         "docs/js/**",
         "docs/*.html",
